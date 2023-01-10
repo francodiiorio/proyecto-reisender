@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+/* INDEX PAGE */
+body{
+    background-color: rgba(246, 244, 239, 1);
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-rows: 48px auto 5rem;
+    grid-template-areas: 
+    "header" 
+    "main"
+    "footer";
+    font-size: 1rem;
+} 
+.inicio__portada{
+    display: none;
+    background-image: url(../assets/img/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 16px;
+    grid-area: portada;
+}
+.header{
+    background-color: rgba(246, 244, 239, 1);
+    grid-area: header;
+    box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    display: grid;
+}
+.header__h1{
+    grid-column: 2;
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+    display: none;
+}
+.nav__a{
+margin: auto;
+}
+.section1{
+    grid-row: 1;
+    font-size: 3.125rem;
+    margin: 2rem;
+
+}
+.section1__h2{
+    font-size: 1em;
+    text-align: center;
+}
+.section1__p{
+    text-align: center;
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 0rem 0.625rem;
+}
+.banner-1{
+    width: 100%;
+    grid-row: 2;
+    display: flex;
+    background-image: url(../assets/img/bariloche.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+.banner-1__h2{
+    color: white;
+    text-align: right;
+    margin: 5%;
+}
+
+
+.banner-2{
+    width: 100%;
+    grid-row: 3;
+    display: flex;
+    background-image: url(../assets/img/san-martin-de-los-andes.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner-2__h2{
+    color: white;
+    margin: 5%;
+}
+main{
+    grid-area: main;
+    background-color: #f8f9fa;
+}
+.main{
+    display: grid;
+    grid-template-rows: auto 300px 300px;
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.625rem;
+}
+.footer__h2{
+    font-size: 1rem;
+}
+.contact__img{
+    width: 25px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+.footer__contact{
+    display: flex;
+    align-items: center;
+}
+.contact__h2{
+    font-size: 1.3rem;
+}
+/* TIENDA PAGES */
+
+/* ACTIVIDADES PAGE */
+
+/* NOSOTROS PAGE */
+.nosotros-main{
+    padding: 5%;
+    background-image: url(../assets/img/nosotros-fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nosotros-container{
+    height: auto;
+    width: 100%;
+    background-color: rgba(21, 21, 21, 1);
+    border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text-container{
+    font-family: 'Poppins', sans-serif;
+    color: rgba(246, 244, 239, 1);
+    margin: 10px;
+}
+.text-container h2{
+    text-transform: capitalize;
+    font-size: 1.5625rem;
+}
+.text-container p{
+    font-size: 1.25rem;
+    margin-right: 5%;
+}
+
+
+/* desktop devices */
+
+
+/* medium devices */
+@media (min-width: 990px) {
+    html{
+        font-size: 30px;
+    }
+    .body-inicio{
+        background-color: rgba(246, 244, 239, 1);
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        display: grid;
+        grid-template-rows: 400px 50px auto 170px;
+        grid-template-areas: 
+        "portada"
+        "header" 
+        "main"
+        "footer";
+    }
+    .inicio__portada{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .portada__h1{
+        text-align: center;
+    }
+    .header{
+        display: grid;
+        grid-template-rows: 50px 1fr 1fr;
+        position: relative;
+        font-size: 16px;
+    }
+    .header__nav{
+        grid-column: 1/4;
+    }
+    .nav__h2{
+        display: none;
+    }
+
+    .main{
+        display: grid;
+        grid-template-rows: auto 400px 400px;
+    }
+
+
+    /* TIENDA PAGE */
+    .tienda-contenedor{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .titulo-tienda{
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        margin: 5% 0 50px 0;
+    }
+    .producto{
+        width: 406px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+        justify-content: space-around;
+    }
+    .titulo-producto{
+        font-size: 25px;
+    }
+    .tienda-img-container{
+        width: 292px;
+        height: 145px;
+        
+    }
+    .tienda-img-container img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+    }
+    .boton-compra{
+        background-color: rgba(21, 21, 21, 1);
+        
+    }
+    .boton-compra p{
+        color: rgba(246, 244, 239, 1);
+        margin: 5px;
+        text-transform: uppercase;
+    }
+    .precio{
+        font-size: 40px;
+        font-weight: normal;
+    }
+    .descripcion{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .link-compra{
+        text-decoration: none;
+    }
+    
+    /*  ACTIVIDADES PAGE    */
+    .estructura-actividades{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        margin: 0px 10px 10px;
+        grid-template-areas: 
+        "actividad-1   actividad-1"
+        "actividad-2   actividad-3"
+        "actividad-4   actividad-4";
+    }
+    .actividades-portada{
+        background-image: url(../assets/img/surf.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        grid-area: actividad-1;
+    }
+    .actividades-titulo{
+        font-size: 64px;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 30px;
+    }
+    .contenedor-actividades{
+        height: 100%;
+        margin: 10px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .contenedor-deportes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .snowboard{
+        background-image: url(../assets/img/snowboard.jpg);
+        background-position: center;
+        background-size: cover;
+        grid-area: actividad-2;
+    }
+    .kayaks{
+        background-image: url(../assets/img/kayak.jpg);
+        background-position: center;
+        background-size: cover;
+        grid-area: actividad-3;
+    }
+    .texto-snowboard{
+        font-family: 'Poppins', sans-serif;
+        margin: 30px;
+    }
+    .texto-kayaks{
+        font-family: 'Poppins', sans-serif;
+        margin: 40px;
+        margin-top: 20px;
+        color: white;
+    }
+    .contenedor-yoga{
+        background-image: url(../assets/img/yoga.jpg);
+        background-position: center;
+        background-size: cover;
+        grid-area: actividad-4;
+    }
+    .texto-yoga{
+        font-family: 'Poppins', sans-serif;
+        text-align: right;
+        margin-right: 50px;
+        font-size: 64px;
+    }
+
+    /*  CONTACTO PAGE   */
+    .formulario-contacto{
+        width: 500px;
+        padding: 30px;
+        background-color: rgba(246, 244, 239, 1);
+        border-radius: 10px;
+        margin-top: 100px;
+    }
+    .formulario-contacto form{
+        display: flex;
+        flex-direction: column;
+    }
+    .recuadro-formulario{
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    .boton-formulario{
+        width: 60px;
+    }
+    .contacto-fondo{
+        background-image: url(../assets/img/nosotros-fondo.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .formulario-contacto h3{
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        font-size: 1.5em;
+    }
+    .contacto-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../assets/img/nosotros-fondo.jpg);
+        background-position: center;
+        background-size: cover;
+        font-size: 16px;
+    }
+}
