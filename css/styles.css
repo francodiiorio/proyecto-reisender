@@ -6,6 +6,7 @@
 }
 html{
     font-size: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* INDEX PAGE */
@@ -140,7 +141,66 @@ main{
 .contact__h2{
     font-size: 1.3rem;
 }
-/* TIENDA PAGES */
+/* TIENDA PAGE */
+
+.store__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.titulo-tienda{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5% 0 50px 0;
+}
+.producto{
+    margin: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-around;
+    padding: 2%;
+}
+.titulo-producto{
+    font-size: 1rem;
+}
+.tienda-img-container{
+    width: 18.25rem;
+    height: 9.0625rem;
+    max-width: 292px;
+    max-height: 145px;
+}
+.tienda-img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+.boton-compra{
+    background-color: rgba(21, 21, 21, 1);
+    
+}
+.boton-compra p{
+    color: rgba(246, 244, 239, 1);
+    margin: 5px;
+    text-transform: uppercase;
+}
+.precio{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.descripcion{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.link-compra{
+    text-decoration: none;
+}
 
 /* ACTIVIDADES PAGE */
 
@@ -186,7 +246,7 @@ main{
 /* > medium devices */
 @media (min-width: 990px) {
     html{
-        font-size: 30px;
+        font-size: 25px;
     }
     body{
         grid-template-rows: 48px auto 100px;
@@ -265,60 +325,6 @@ main{
 
 
     /* TIENDA PAGE */
-    .tienda-contenedor{
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 20px;
-    }
-    .titulo-tienda{
-        font-family: 'Poppins', sans-serif;
-        font-size: 40px;
-        text-align: center;
-        margin: 5% 0 50px 0;
-    }
-    .producto{
-        width: 406px;
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-        font-family: 'Poppins', sans-serif;
-        justify-content: space-around;
-    }
-    .titulo-producto{
-        font-size: 25px;
-    }
-    .tienda-img-container{
-        width: 292px;
-        height: 145px;
-        
-    }
-    .tienda-img-container img{
-        width: 100%;
-        height: 100%;
-        border-radius: 5%;
-    }
-    .boton-compra{
-        background-color: rgba(21, 21, 21, 1);
-        
-    }
-    .boton-compra p{
-        color: rgba(246, 244, 239, 1);
-        margin: 5px;
-        text-transform: uppercase;
-    }
-    .precio{
-        font-size: 40px;
-        font-weight: normal;
-    }
-    .descripcion{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .link-compra{
-        text-decoration: none;
-    }
     
     /*  ACTIVIDADES PAGE    */
     .estructura-actividades{
