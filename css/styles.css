@@ -50,9 +50,6 @@ body{
     font-size: 2rem;
     display: none;
 }
-.nav__a{
-margin: auto;
-}
 .section1{
     grid-row: 1;
     font-size: 3.125rem;
@@ -237,7 +234,7 @@ main{
 }
 
 
-@media (min-width: 400px) {
+@media (min-width: 320px) {
     html{
         font-size: 16px;
     }
