@@ -1,0 +1,33 @@
+.nosotros-main{
+    padding: 5%;
+    background-image: url(../assets/img/nosotros-fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nosotros{
+    height: auto;
+    width: 100%;
+    background-color: rgba(21, 21, 21, 1);
+    border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__text-container{
+        font-family: 'Poppins', sans-serif;
+        color: rgba(246, 244, 239, 1);
+        margin: 10px;
+    }
+}
+.text-container{
+    &__h2{
+        text-transform: capitalize;
+        font-size: 1.5625rem;
+    }
+    &__p{
+        font-size: 1.25rem;
+        margin-right: 5%;
+    }
+}

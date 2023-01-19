@@ -1,0 +1,6 @@
+@mixin box-model(){
+    padding: $padding;
+    margin: $margin;
+    border: $border;
+    border-radius: $border-radius;
+}

@@ -1,0 +1,42 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./base/typo";
+@import "./base/reset";
+@import "./components/buttons";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+@import "./layout/portada";
+@import "./layout/main/sotre-main";
+@import "./layout/main/nosotros-main";
+@import "./layout/main/actividades-main";
+@import "./layout/mediaQ";
+
+body{
+    background-color: rgba(246, 244, 239, 1);
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-rows: 48px auto auto;
+    grid-template-areas: 
+    "header" 
+    "main"
+    "footer";
+    font-size: 1rem;
+}
+.body-inicio{
+    background-color: rgba(246, 244, 239, 1);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-rows: 100vh 50px auto auto;
+    grid-template-areas: 
+    "portada"
+    "header" 
+    "main"
+    "footer";
+}

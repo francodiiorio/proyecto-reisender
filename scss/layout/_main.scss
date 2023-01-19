@@ -1,0 +1,51 @@
+.section1{
+    grid-row: 1;
+    font-size: 3.125rem;
+    margin: 2rem;
+
+    &__h2{
+        font-size: 1em;
+        text-align: center;
+    }
+    &__p{
+        text-align: center;
+        font-weight: 800;
+        font-size: 1rem;
+        margin: 0rem 0.625rem;
+    }
+}
+.banner-1{
+    width: 100%;
+    grid-row: 2;
+    display: flex;
+    background-image: url(../assets/img/bariloche.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__h2{
+        color: white;
+        text-align: right;
+        margin: 5%;
+    }
+}
+.banner-2{
+    width: 100%;
+    grid-row: 3;
+    display: flex;
+    background-image: url(../assets/img/san-martin-de-los-andes.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__h2{
+        color: white;
+        margin: 5%;
+    }
+}
+.main{
+    display: grid;
+    grid-template-rows: auto 300px 300px;
+}
