@@ -104,11 +104,10 @@
   font-size: 1.3rem; }
 
 .inicio__portada {
-  background-image: url(../../assets/img/paradise-phone.jpg);
+  background-image: url(../assets/img/paradise-phone.jpg);
   background-position: center;
   background-size: cover;
   color: white;
-  font-size: 16px;
   grid-area: portada;
   display: flex;
   align-items: center;
@@ -116,7 +115,9 @@
   position: relative; }
 
 .portada__h1 {
-  text-align: center; }
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 5px; }
 
 .store__container {
   display: grid;
@@ -200,7 +201,7 @@
   margin: 0px 10px 10px; }
 
 .actividades__portada {
-  background-image: url(../../../assets/img/surf.jpg);
+  background-image: url(../assets/img/surf.jpg);
   background-position: center;
   background-size: cover;
   color: white;
