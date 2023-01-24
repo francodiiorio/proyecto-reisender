@@ -6,12 +6,10 @@
     -moz-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.5);
     position: sticky;
     top: 0;
-    display: grid;
-    &__h1{
-        grid-column: 2;
+    font-size: 16px;
+    &__h2{
 	    text-align: center;
 	    align-self: center;
-	    font-size: 2rem;
-	    display: none;
+	    display: flex;
     }
 }

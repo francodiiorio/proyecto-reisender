@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,9 @@
     margin: 5px;
     text-transform: uppercase; }
 
+.boton-formulario {
+  width: 60px; }
+
 .header {
   background-color: #f6f4ef;
   grid-area: header;
@@ -19,26 +23,34 @@
   -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
-  display: grid; }
-  .header__h1 {
-    grid-column: 2;
+  font-size: 16px; }
+  .header__h2 {
     text-align: center;
     align-self: center;
-    font-size: 2rem;
-    display: none; }
+    display: flex; }
 
 .section1 {
   grid-row: 1;
-  font-size: 3.125rem;
-  margin: 2rem; }
+  padding: 20px; }
   .section1__h2 {
-    font-size: 1em;
     text-align: center; }
-  .section1__p {
-    text-align: center;
-    font-weight: 800;
-    font-size: 1rem;
-    margin: 0rem 0.625rem; }
+  .section1__lugares {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center; }
+
+.lugares__1 {
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  background-image: url(../assets/img/card-nepal.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white; }
 
 .banner-1 {
   width: 100%;
@@ -58,18 +70,53 @@
   width: 100%;
   grid-row: 3;
   display: flex;
-  background-image: url(../assets/img/san-martin-de-los-andes.jpg);
-  background-size: cover;
-  background-position: center;
-  justify-content: flex-start;
-  align-items: center; }
+  flex-direction: column;
+  padding: 0.625rem; }
   .banner-2__h2 {
+    text-align: center; }
+  .banner-2__h3 {
+    text-align: center; }
+  .banner-2__grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    grid-auto-flow: dense;
+    gap: 20px;
+    padding: 20px; }
+  .banner-2__card {
     color: white;
-    margin: 5%; }
+    display: flex;
+    background-color: aqua;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 0.3125rem;
+    background-position: center;
+    background-size: cover; }
 
-.main {
+.card__1 {
+  background-image: url(../assets/img/card-chernobyl.jpg); }
+
+.card__2 {
+  background-image: url(../assets/img/card-monaco.jpg); }
+
+.card__3 {
+  background-image: url(../assets/img/card-macedonia.jpg); }
+
+.card__4 {
+  background-image: url(../assets/img/card-estonia.jpg); }
+
+.card__5 {
+  background-image: url(../assets/img/card-rusia.jpg); }
+
+.wide {
+  grid-column: span 2; }
+
+.tall {
+  grid-row: span 2; }
+
+.index-main {
   display: grid;
-  grid-template-rows: auto 300px 300px; }
+  grid-template-rows: auto 400px auto; }
 
 .footer {
   padding: 10px;
@@ -110,17 +157,22 @@
   color: white;
   grid-area: portada;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  gap: 0.625rem;
+  padding: 1.25rem; }
 
 .portada__h1 {
   font-size: 3rem;
-  text-align: center;
   letter-spacing: 5px; }
 
 .store__container {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 15px;
   margin-bottom: 20px;
@@ -141,7 +193,7 @@
   align-items: center;
   background-color: white;
   justify-content: space-around;
-  padding: 2%; }
+  padding: 3%; }
   .producto__title {
     font-size: 1rem; }
   .producto__img-container {
@@ -199,67 +251,35 @@
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
   margin: 0px 10px 10px; }
-
-.actividades__portada {
-  background-image: url(../assets/img/surf.jpg);
-  background-position: center;
-  background-size: cover;
-  color: white;
-  margin-top: 10px;
-  grid-row: 1; }
-
-.actividades__titulo-1 {
-  font-size: 2rem;
-  font-family: 'Poppins', sans-serif;
-  align-self: center;
-  margin-top: 10px;
-  margin-left: 30px; }
-
-.contenedor-actividades {
-  height: 100%;
-  margin: 10px;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px; }
-
-.contenedor-deportes {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px; }
-
-.snowboard {
-  background-image: url(../assets/img/snowboard.jpg);
-  background-position: center;
-  background-size: cover;
-  grid-row: 2; }
-
-.kayaks {
-  background-image: url(../assets/img/kayak.jpg);
-  background-position: center;
-  background-size: cover;
-  grid-row: 3; }
-
-.texto-snowboard {
-  font-family: 'Poppins', sans-serif;
-  margin: 30px; }
-
-.texto-kayaks {
-  font-family: 'Poppins', sans-serif;
-  margin: 40px;
-  margin-top: 20px;
-  color: white; }
-
-.contenedor-yoga {
-  background-image: url(../assets/img/yoga.jpg);
-  background-position: center;
-  background-size: cover;
-  grid-row: 4; }
-
-.texto-yoga {
-  font-family: 'Poppins', sans-serif;
-  text-align: right;
-  margin-right: 50px;
-  font-size: 2rem; }
+  .actividades__banner-1 {
+    background-image: url(../assets/img/surf.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin-top: 10px;
+    grid-row: 1; }
+  .actividades__banner-2 {
+    background-image: url(../assets/img/snowboard.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 2; }
+  .actividades__banner-3 {
+    background-image: url(../assets/img/kayak.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 3;
+    color: white; }
+  .actividades__banner-4 {
+    background-image: url(../assets/img/yoga.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 4; }
+  .actividades__text {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    margin-top: 10px;
+    margin: 30px; }
 
 @media (min-width: 320px) {
   html {
@@ -289,12 +309,11 @@
       grid-column: 2;
       display: flex;
       align-items: center;
-      justify-content: flex-end; }
+      justify-content: center; }
   .contact__h2 {
     font-size: 25px; }
   .contact__img {
     width: 35px; }
-  /*  INDEX   */
   /*  HEADER  */
   .inicio__portada {
     background-image: url(../../assets/img/paradise.jpg);
@@ -302,16 +321,13 @@
     background-size: cover; }
   .header {
     display: grid;
-    grid-template-rows: 50px 1fr 1fr;
-    position: sticky;
-    font-size: 16px; }
-    .header__nav {
-      grid-column: 1/4; }
-  .nav__h2 {
-    display: none; }
-  .main {
+    grid-template-rows: 50px 1fr 1fr; }
+    .header__h2 {
+      display: none; }
+  /*  INDEX   */
+  .index-main {
     display: grid;
-    grid-template-rows: auto 400px 400px; }
+    grid-template-rows: auto 500px auto; }
   /*  ACTIVIDADES PAGE    */
   .actividades {
     display: grid;
@@ -320,71 +336,31 @@
     gap: 10px;
     margin: 0px 10px 10px;
     grid-template-areas: "actividad-1   actividad-1" "actividad-2   actividad-3" "actividad-4   actividad-4"; }
-    .actividades__portada {
-      background-image: url(../assets/img/surf.jpg);
-      background-position: center;
-      background-size: cover;
-      color: white;
+    .actividades__banner-1 {
       grid-area: actividad-1; }
-  .actividades__titulo-1 {
-    font-size: 64px;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 30px; }
-  .contenedor-actividades {
-    height: 100%;
-    margin: 10px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px; }
-  .contenedor-deportes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px; }
-  .snowboard {
-    background-image: url(../assets/img/snowboard.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-area: actividad-2; }
-  .kayaks {
-    background-image: url(../assets/img/kayak.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-area: actividad-3; }
-  .texto-snowboard {
-    font-family: 'Poppins', sans-serif;
-    margin: 30px; }
-  .texto-kayaks {
-    font-family: 'Poppins', sans-serif;
-    margin: 40px;
-    margin-top: 20px;
-    color: white; }
-  .contenedor-yoga {
-    background-image: url(../assets/img/yoga.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-area: actividad-4; }
-  .texto-yoga {
-    font-family: 'Poppins', sans-serif;
-    text-align: right;
-    margin-right: 50px;
-    font-size: 64px; }
+    .actividades__banner-2 {
+      grid-area: actividad-2; }
+    .actividades__banner-3 {
+      grid-area: actividad-3; }
+    .actividades__banner-4 {
+      grid-area: actividad-4;
+      text-align: right; }
   /*  CONTACTO PAGE   */
-  .formulario-contacto {
+  .contacto__container {
     width: 500px;
     padding: 30px;
     background-color: #f6f4ef;
     border-radius: 10px;
     margin-top: 100px; }
-  .formulario-contacto form {
+  .contacto__form {
     display: flex;
     flex-direction: column; }
-  .recuadro-formulario {
+  .contacto__recuadro-form {
     width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-bottom: 10px; }
-  .boton-formulario {
-    width: 60px; }
+  /*  CONTACT PAGE    */
   .contacto-fondo {
     background-image: url(../assets/img/nosotros-fondo.jpg);
     background-position: center;

@@ -37,7 +37,7 @@
             grid-column: 2;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: center;
         }
     }
     .contact{
@@ -49,7 +49,6 @@
             width: 35px;
         }
     }
-    /*  INDEX   */
     
     /*  HEADER  */
     .inicio__portada{
@@ -60,20 +59,15 @@
     .header{
         display: grid;
         grid-template-rows: 50px 1fr 1fr;
-        position: sticky;
-        font-size: 16px;
-
-        &__nav{
-            grid-column: 1/4;
+        &__h2{
+            display: none;
         }
     }
-    .nav__h2{
-        display: none;
-    }
 
-    .main{
+    /*  INDEX   */
+    .index-main{
         display: grid;
-        grid-template-rows: auto 400px 400px;
+        grid-template-rows: auto 500px auto;
     }
     
     /*  ACTIVIDADES PAGE    */
@@ -88,87 +82,49 @@
         "actividad-2   actividad-3"
         "actividad-4   actividad-4";
 
-        &__portada{
-            background-image: url(../assets/img/surf.jpg);
-            background-position: center;
-            background-size: cover;
-            color: white;
+        &__banner-1{
             grid-area: actividad-1;
         }
-    }
-    .actividades__titulo-1{
-        font-size: 64px;
-        font-family: 'Poppins', sans-serif;
-        margin-left: 30px;
-    }
-    .contenedor-actividades{
-        height: 100%;
-        margin: 10px;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 10px;
-    }
-    .contenedor-deportes{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-    .snowboard{
-        background-image: url(../assets/img/snowboard.jpg);
-        background-position: center;
-        background-size: cover;
-        grid-area: actividad-2;
-    }
-    .kayaks{
-        background-image: url(../assets/img/kayak.jpg);
-        background-position: center;
-        background-size: cover;
-        grid-area: actividad-3;
-    }
-    .texto-snowboard{
-        font-family: 'Poppins', sans-serif;
-        margin: 30px;
-    }
-    .texto-kayaks{
-        font-family: 'Poppins', sans-serif;
-        margin: 40px;
-        margin-top: 20px;
-        color: white;
-    }
-    .contenedor-yoga{
-        background-image: url(../assets/img/yoga.jpg);
-        background-position: center;
-        background-size: cover;
-        grid-area: actividad-4;
-    }
-    .texto-yoga{
-        font-family: 'Poppins', sans-serif;
-        text-align: right;
-        margin-right: 50px;
-        font-size: 64px;
+
+        &__banner-2{
+            grid-area: actividad-2;
+        }
+
+        &__banner-3{
+            grid-area: actividad-3;
+        }
+
+        &__banner-4{
+            grid-area: actividad-4;
+            text-align: right;
+        }
     }
 
     /*  CONTACTO PAGE   */
-    .formulario-contacto{
-        width: 500px;
-        padding: 30px;
-        background-color: rgba(246, 244, 239, 1);
-        border-radius: 10px;
-        margin-top: 100px;
+    .contacto{
+        &__container{
+            width: 500px;
+            padding: 30px;
+            background-color: rgba(246, 244, 239, 1);
+            border-radius: 10px;
+            margin-top: 100px;
+        }
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__recuadro-form{
+            width: 100%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
     }
-    .formulario-contacto form{
-        display: flex;
-        flex-direction: column;
-    }
-    .recuadro-formulario{
-        width: 100%;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        margin-bottom: 10px;
-    }
-    .boton-formulario{
-        width: 60px;
-    }
+
+
+    /*  CONTACT PAGE    */
     .contacto-fondo{
         background-image: url(../assets/img/nosotros-fondo.jpg);
         background-position: center;

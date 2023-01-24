@@ -3,65 +3,44 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     margin: 0px 10px 10px;
+
+    &__banner-1{
+        background-image: url(../assets/img/surf.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        margin-top: 10px;
+        grid-row: 1;
+    }
+
+    &__banner-2{
+        background-image: url(../assets/img/snowboard.jpg);
+        background-position: center;
+        background-size: cover;
+        grid-row: 2;
+    }
+
+    &__banner-3{
+        background-image: url(../assets/img/kayak.jpg);
+        background-position: center;
+        background-size: cover;
+        grid-row: 3;
+        color: white;
+    }
+
+    &__banner-4{
+        background-image: url(../assets/img/yoga.jpg);
+        background-position: center;
+        background-size: cover;
+        grid-row: 4;
+    }
+
+    &__text{
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        align-self: center;
+        margin-top: 10px;
+        margin: 30px;
+    }
 }
-.actividades__portada{
-    background-image: url(../assets/img/surf.jpg);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    margin-top: 10px;
-    grid-row: 1;
-}
-.actividades__titulo-1{
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
-    align-self: center;
-    margin-top: 10px;
-    margin-left: 30px;
-}
-.contenedor-actividades{
-    height: 100%;
-    margin: 10px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-}
-.contenedor-deportes{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-.snowboard{
-    background-image: url(../assets/img/snowboard.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-row: 2;
-}
-.kayaks{
-    background-image: url(../assets/img/kayak.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-row: 3;
-}
-.texto-snowboard{
-    font-family: 'Poppins', sans-serif;
-    margin: 30px;
-}
-.texto-kayaks{
-    font-family: 'Poppins', sans-serif;
-    margin: 40px;
-    margin-top: 20px;
-    color: white;
-}
-.contenedor-yoga{
-    background-image: url(../assets/img/yoga.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-row: 4;
-}
-.texto-yoga{
-    font-family: 'Poppins', sans-serif;
-    text-align: right;
-    margin-right: 50px;
-    font-size: 2rem;
-}
+

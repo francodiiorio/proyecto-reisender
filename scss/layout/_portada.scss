@@ -5,12 +5,18 @@
     color: white;
     grid-area: portada;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-}
-.portada__h1{
-    font-size: 3rem;
+    font-family: $secondary-typo;
     text-align: center;
-    letter-spacing: 5px;
+    gap: 0.625rem;
+    padding: 1.25rem;
+}
+.portada{
+    &__h1{
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
 }

@@ -1,10 +1,11 @@
 .store{
     &__container{
         display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 15px;
-    margin-bottom: 20px;
-    font-family: $principal-typo;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 15px;
+        margin-bottom: 20px;
+        font-family: $principal-typo;
     }
     
     &__title{
@@ -23,7 +24,7 @@
     align-items: center;
     background-color: white;
     justify-content: space-around;
-    padding: 2%;
+    padding: 3%;
 
     &__title{
         font-size: 1rem;
